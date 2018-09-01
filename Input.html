@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+<body>
+<div id="div" style="text-align: center; font-size: 30px;">
+    <table align="center">
+        <tr>
+            <td><p>Check Box</p>
+                <form><input align="center" id="input" type="text"></form>
+                <button type="button" onclick="check()">Check!</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="center" border="1" style="height: 200px;width: 240px;">
+                    <tr>
+                        <td>
+                            <output id="checkoutput"></output>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="1" style="border-style: solid;border-color: black;" align="center">
+        <tr id="lablel">
+            <td></td>
+            <td>Anh</td>
+            <td>Việt</td>
+            <td>Pháp</td>
+            <td>Đức</td>
+        </tr>
+        <tr id="output">
+            <td style="text-align: center;">Onput</td>
+            <td>
+                <output style="text-align: center" id="o0"></output>
+            </td>
+            <td>
+                <output style="text-align: center" id="o1"></output>
+            </td>
+            <td>
+                <output style="text-align: center" id="o2"></output>
+            </td>
+            <td>
+                <output style="text-align: center" id="o3"></output>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">Input</td>
+            <td>
+                <form><input type="text" id="0"></form>
+            </td>
+
+            <td>
+                <form><input type="text" id="1"></form>
+            </td>
+
+            <td>
+                <form><input type="text" id="2"></form>
+            </td>
+
+            <td>
+                <form><input type="text" id="3"></form>
+            </td>
+
+        </tr>
+    </table>
+    <div align="center">
+        <button type="button" onclick="submitdata()" style="text-align: center">Submit</button>
+        <br>
+        <button type="button" onclick="removeall()" style="text-align: center">Remove all Data</button>
+    </div>
+</div>
+<script src="Trans.js"></script>
+</body>
+</html>

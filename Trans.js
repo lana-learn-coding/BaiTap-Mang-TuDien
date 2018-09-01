@@ -1,6 +1,6 @@
 let ifnew;
 let wordindex;
-let bigdata = [["apple"], ["quả táo"], ["pomme"], ["apfel"]];
+let bigdata = [["apple","hi"], ["quả táo","chào"], ["pomme","salut"], ["apfel","hallo"]];
 let inputword = "";
 
 
@@ -36,52 +36,3 @@ function Trans() {
 }
 
 
-//Input.html
-let ifcheck = 0;
-
-//nút check
-function check() {
-    ifcheck = 1;
-    scan();
-    if (ifnew === 0) {
-        let prinout = "";
-        for (let li = 0; li < bigdata.length; li++) {
-            prinout = prinout + li + " " + bigdata[li][wordindex] + "<br>";
-        }
-        document.getElementById("checkoutput").innerHTML = prinout;
-    } else {
-        wordindex = wordindex + 1;
-        document.getElementById("checkoutput").innerText = "Đây là 1 từ mới";
-    }
-}
-
-//nút Submit
-function submitdata() {
-    if (ifcheck === 0) {
-        alert("chưa check kìa");
-    }
-    else {
-        if (ifnew === 1) {
-            for (let i = 0; i < bigdata.length; i++) {
-                i = i + "";console.log(i);
-                if (document.getElementById(i).value === "") {
-                    bigdata.push("chưa có dữ liệu");
-                }
-                else {
-                    bigdata.push(document.getElementById(i).value);
-                }
-                i = parseInt(i);
-            }
-        }
-    }
-}
-
-
-//nút xóa tất cả
-function removeall() {
-    ifnew = 1;
-    ifcheck = 0;
-    wordindex = 0;
-    inputword = "";
-    bigdata = [["apple"], ["quả táo"], ["pomme"], ["apfel"]];
-}

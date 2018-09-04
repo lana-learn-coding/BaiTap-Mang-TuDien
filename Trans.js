@@ -1,7 +1,8 @@
-let ifnew;
-let wordindex;
-let bigdata = [["apple","hi"], ["quả táo","chào"], ["pomme","salut"], ["apfel","hallo"]];
+let ifnew = 1;
+let wordindex = 0;
+let bigdata = [["apple", "hi","sleep"], ["quả táo", "chào","ngủ"], ["pomme", "salut","chưa có dữ liệu"], ["apfel", "hallo","chưa có dữ liệu"]];
 let inputword = "";
+let usercheckcount = 0;
 
 
 //scan big data

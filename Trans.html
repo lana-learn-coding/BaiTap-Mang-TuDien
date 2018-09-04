@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<p align="center">Từ điển</p>
+<form>
+    <table align="center" border="1">
+        <tr>
+            <td><input id="input" type="text"></td>
+            <td>
+                <button type="button" onclick="Trans()">Trans</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <output style="width: 100px;height: 100px;" id="out"></output>
+            </td>
+            <td><select id="selection">
+                <option>Anh</option>
+                <option>Việt</option>
+                <option>Pháp</option>
+                <option>Đức</option>
+            </select></td>
+        </tr>
+    </table>
+</form>
+<br>
+<br><br>
+<br><br>
+<div id="usercheck" style="text-align: center;">
+    <p align="center">Cập nhật từ điển</p>
+    <table align="center" border="1">
+        <tr>
+            <td>Anh</td>
+            <td>Việt</td>
+            <td>Pháp</td>
+            <td>Đức</td>
+        </tr>
+        <tr>
+                <td><input id="0" type="text" name="Anh"></td>
+                <td><input id="1" type="text" name="Việt"></td>
+                <td><input id="2" type="text" name="Pháp"></td>
+                <td><input id="3" type="text" name="Đức"></td>
+        </tr>
+    </table>
+    <br>
+    <table align="center" border="1" style="width: 200px;">
+        <tr>
+            <td>
+                <output id="progess" style="text-align: start;"></output>
+            </td>
+        </tr>
+    </table>
+    <p align="center">
+        <button type="button" onclick="superscan();">Add</button>
+    </p>
+    <p align="center">
+        <button type="button" onclick="refreshall()">Remove All Data</button>
+    </p>
+</div>
+<script src="Trans.js"></script>
+</body>
+</html>
